@@ -1,0 +1,383 @@
+
+Compiling with gcc -Wall -lm -std=c99 ... 
+Compilation succeeded.
+============================================
+Test for input file: test0.in
+#hewitt
+5 95 0
+#hugh
+40 60 0
+#jackman
+0 100 0
+#logan
+40 0 60
+#melbourne
+5 5 90
+#sydney
+5 5 90
+#zack
+40 40 20
+%%%%%%%%%%
+hugh jackman is retiring the wolverine character after logan 
+ 
+Expected results:                                                  Your results:
+=========================Stage 1=========================          =========================Stage 1=========================
+Name 0: hewitt                                                     Name 0: hewitt
+Label probabilities: 5% 95% 0%                                     Label probabilities: 5% 95% 0%
+
+=========================Stage 2=========================          =========================Stage 2=========================
+Number of names: 7                                                 Number of names: 7
+Average number of characters per name: 5.86                        Average number of characters per name: 5.86
+
+=========================Stage 3=========================          =========================Stage 3=========================
+hugh                                                               hugh
+jackman                                                            jackman
+is                                                                 is
+retiring                                                           retiring
+the                                                                the
+wolverine                                                          wolverine
+character                                                          character
+after                                                              after
+logan                                                              logan
+
+=========================Stage 4=========================          =========================Stage 4=========================
+hugh                            FIRST_NAME, LAST_NAME              hugh                            FIRST_NAME, LAST_NAME
+jackman                         LAST_NAME                          jackman                         LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+retiring                        NOT_NAME                           retiring                        NOT_NAME
+the                             NOT_NAME                           the                             NOT_NAME
+wolverine                       NOT_NAME                           wolverine                       NOT_NAME
+character                       NOT_NAME                           character                       NOT_NAME
+after                           NOT_NAME                           after                           NOT_NAME
+logan                           FIRST_NAME                         logan                           FIRST_NAME
+
+=========================Stage 5=========================          =========================Stage 5=========================
+hugh                            FIRST_NAME                         hugh                            FIRST_NAME
+jackman                         LAST_NAME                          jackman                         LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+retiring                        NOT_NAME                           retiring                        NOT_NAME
+the                             NOT_NAME                           the                             NOT_NAME
+wolverine                       NOT_NAME                           wolverine                       NOT_NAME
+character                       NOT_NAME                           character                       NOT_NAME
+after                           NOT_NAME                           after                           NOT_NAME
+logan                           NOT_NAME                           logan                           NOT_NAME
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: test1.in
+#hewitt
+5 95 0
+%%%%%%%%%%
+hugh 
+ 
+Expected results:                                                  Your results:
+=========================Stage 1=========================          =========================Stage 1=========================
+Name 0: hewitt                                                     Name 0: hewitt
+Label probabilities: 5% 95% 0%                                     Label probabilities: 5% 95% 0%
+
+=========================Stage 2=========================          =========================Stage 2=========================
+Number of names: 1                                                 Number of names: 1
+Average number of characters per name: 6.00                        Average number of characters per name: 6.00
+
+=========================Stage 3=========================          =========================Stage 3=========================
+hugh                                                               hugh
+
+=========================Stage 4=========================          =========================Stage 4=========================
+hugh                            NOT_NAME                           hugh                            NOT_NAME
+
+=========================Stage 5=========================          =========================Stage 5=========================
+hugh                            NOT_NAME                           hugh                            NOT_NAME
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: test2.in
+#lamborghini
+3 0 97
+#little
+3 13 84
+#mary
+97 3 0
+%%%%%%%%%%
+mary had a little lamborghini 
+ 
+Expected results:                                                  Your results:
+=========================Stage 1=========================          =========================Stage 1=========================
+Name 0: lamborghini                                                Name 0: lamborghini
+Label probabilities: 3% 0% 97%                                     Label probabilities: 3% 0% 97%
+
+=========================Stage 2=========================          =========================Stage 2=========================
+Number of names: 3                                                 Number of names: 3
+Average number of characters per name: 7.00                        Average number of characters per name: 7.00
+
+=========================Stage 3=========================          =========================Stage 3=========================
+mary                                                               mary
+had                                                                had
+a                                                                  a
+little                                                             little
+lamborghini                                                        lamborghini
+
+=========================Stage 4=========================          =========================Stage 4=========================
+mary                            FIRST_NAME, LAST_NAME              mary                            FIRST_NAME, LAST_NAME
+had                             NOT_NAME                           had                             NOT_NAME
+a                               NOT_NAME                           a                               NOT_NAME
+little                          FIRST_NAME, LAST_NAME              little                          FIRST_NAME, LAST_NAME
+lamborghini                     FIRST_NAME                         lamborghini                     FIRST_NAME
+
+=========================Stage 5=========================          =========================Stage 5=========================
+mary                            FIRST_NAME                         mary                            FIRST_NAME
+had                             NOT_NAME                           had                             NOT_NAME
+a                               NOT_NAME                           a                               NOT_NAME
+little                          NOT_NAME                           little                          NOT_NAME
+lamborghini                     NOT_NAME                           lamborghini                     NOT_NAME
+ 
+Your results seem to be CORRECT.  :)
+ 
+ 
+============================================
+Test for input file: invis0.in
+#anodi
+40 60 0
+#back
+1 0 99
+#melbourne
+5 5 90
+#shoziniga
+0 100 0
+#sydney
+5 5 90
+#terminator
+0 1 99
+%%%%%%%%%%
+i will be back 
+ 
+Expected results:                                                  Your results:
+=========================Stage 1=========================          =========================Stage 1=========================
+Name 0: anodi                                                      Name 0: anodi
+Label probabilities: 40% 60% 0%                                    Label probabilities: 40% 60% 0%
+
+=========================Stage 2=========================          =========================Stage 2=========================
+Number of names: 6                                                 Number of names: 6
+Average number of characters per name: 7.17                        Average number of characters per name: 7.17
+
+=========================Stage 3=========================          =========================Stage 3=========================
+i                                                                  i
+will                                                               will
+be                                                                 be
+back                                                               back
+
+=========================Stage 4=========================          =========================Stage 4=========================
+i                               NOT_NAME                           i                               NOT_NAME
+will                            NOT_NAME                           will                            NOT_NAME
+be                              NOT_NAME                           be                              NOT_NAME
+back                            FIRST_NAME                         back                            FIRST_NAME
+
+=========================Stage 5=========================          =========================Stage 5=========================
+i                               NOT_NAME                           i                               NOT_NAME
+will                            NOT_NAME                           will                            NOT_NAME
+be                              NOT_NAME                           be                              NOT_NAME
+back                            NOT_NAME                           back                            NOT_NAME
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: invis1.in
+#allocate
+1 0 99
+#jon
+50 40 10
+#know
+5 0 95
+#she
+0 2 98
+#snow
+0 50 50
+%%%%%%%%%%
+you know nothing jon snow 
+ 
+Expected results:                                                  Your results:
+=========================Stage 1=========================          =========================Stage 1=========================
+Name 0: allocate                                                   Name 0: allocate
+Label probabilities: 1% 0% 99%                                     Label probabilities: 1% 0% 99%
+
+=========================Stage 2=========================          =========================Stage 2=========================
+Number of names: 5                                                 Number of names: 5
+Average number of characters per name: 4.40                        Average number of characters per name: 4.40
+
+=========================Stage 3=========================          =========================Stage 3=========================
+you                                                                you
+know                                                               know
+nothing                                                            nothing
+jon                                                                jon
+snow                                                               snow
+
+=========================Stage 4=========================          =========================Stage 4=========================
+you                             NOT_NAME                           you                             NOT_NAME
+know                            FIRST_NAME                         know                            FIRST_NAME
+nothing                         NOT_NAME                           nothing                         NOT_NAME
+jon                             FIRST_NAME, LAST_NAME              jon                             FIRST_NAME, LAST_NAME
+snow                            LAST_NAME                          snow                            LAST_NAME
+
+=========================Stage 5=========================          =========================Stage 5=========================
+you                             NOT_NAME                           you                             NOT_NAME
+know                            NOT_NAME                           know                            NOT_NAME
+nothing                         NOT_NAME                           nothing                         NOT_NAME
+jon                             FIRST_NAME                         jon                             FIRST_NAME
+snow                            LAST_NAME                       |  snow                            FIRST_NAME
+ 
+Oops, your results seem to be INCORRECT.  :(
+ 
+============================================
+Test for input file: invis2.in
+#allocate
+1 0 99
+#amazon
+80 10 10
+#queen
+4 31 65
+#robert
+80 20 0
+#sell
+1 0 99
+#she
+1 0 99
+#the
+1 0 99
+#winter
+0 20 80
+#zebra
+1 0 99
+#zza
+1 0 99
+#zzb
+1 0 99
+#zzc
+1 0 99
+#zzd
+1 0 99
+#zze
+1 0 99
+#zzf
+1 0 99
+#zzz
+1 0 99
+%%%%%%%%%%
+queen is coming but amazon is not coming but amazon queen is not coming but this winter robert is not coming but robert winter is coming but this winter robert is not coming 
+ 
+Expected results:                                                  Your results:
+=========================Stage 1=========================          =========================Stage 1=========================
+Name 0: allocate                                                   Name 0: allocate
+Label probabilities: 1% 0% 99%                                     Label probabilities: 1% 0% 99%
+
+=========================Stage 2=========================          =========================Stage 2=========================
+Number of names: 16                                                Number of names: 16
+Average number of characters per name: 4.19                        Average number of characters per name: 4.19
+
+=========================Stage 3=========================          =========================Stage 3=========================
+queen                                                              queen
+is                                                                 is
+coming                                                             coming
+but                                                                but
+amazon                                                             amazon
+is                                                                 is
+not                                                                not
+coming                                                             coming
+but                                                                but
+amazon                                                             amazon
+queen                                                              queen
+is                                                                 is
+not                                                                not
+coming                                                             coming
+but                                                                but
+this                                                               this
+winter                                                             winter
+robert                                                             robert
+is                                                                 is
+not                                                                not
+coming                                                             coming
+but                                                                but
+robert                                                             robert
+winter                                                             winter
+is                                                                 is
+coming                                                             coming
+but                                                                but
+this                                                               this
+winter                                                             winter
+robert                                                             robert
+is                                                                 is
+not                                                                not
+coming                                                             coming
+
+=========================Stage 4=========================          =========================Stage 4=========================
+queen                           FIRST_NAME, LAST_NAME              queen                           FIRST_NAME, LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+amazon                          FIRST_NAME, LAST_NAME              amazon                          FIRST_NAME, LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+amazon                          FIRST_NAME, LAST_NAME              amazon                          FIRST_NAME, LAST_NAME
+queen                           FIRST_NAME, LAST_NAME              queen                           FIRST_NAME, LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+this                            NOT_NAME                           this                            NOT_NAME
+winter                          LAST_NAME                          winter                          LAST_NAME
+robert                          FIRST_NAME, LAST_NAME              robert                          FIRST_NAME, LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+robert                          FIRST_NAME, LAST_NAME              robert                          FIRST_NAME, LAST_NAME
+winter                          LAST_NAME                          winter                          LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+this                            NOT_NAME                           this                            NOT_NAME
+winter                          LAST_NAME                          winter                          LAST_NAME
+robert                          FIRST_NAME, LAST_NAME              robert                          FIRST_NAME, LAST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+
+=========================Stage 5=========================          =========================Stage 5=========================
+queen                           NOT_NAME                           queen                           NOT_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+amazon                          FIRST_NAME                         amazon                          FIRST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+amazon                          FIRST_NAME                         amazon                          FIRST_NAME
+queen                           LAST_NAME                       |  queen                           NOT_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+this                            NOT_NAME                           this                            NOT_NAME
+winter                          NOT_NAME                           winter                          NOT_NAME
+robert                          FIRST_NAME                         robert                          FIRST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+robert                          FIRST_NAME                         robert                          FIRST_NAME
+winter                          LAST_NAME                       |  winter                          NOT_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+but                             NOT_NAME                           but                             NOT_NAME
+this                            NOT_NAME                           this                            NOT_NAME
+winter                          NOT_NAME                           winter                          NOT_NAME
+robert                          FIRST_NAME                         robert                          FIRST_NAME
+is                              NOT_NAME                           is                              NOT_NAME
+not                             NOT_NAME                           not                             NOT_NAME
+coming                          NOT_NAME                           coming                          NOT_NAME
+ 
+Oops, your results seem to be INCORRECT.  :(
+ 

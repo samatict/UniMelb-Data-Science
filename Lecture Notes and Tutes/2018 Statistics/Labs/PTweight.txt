@@ -1,0 +1,11 @@
+"Group" "Value"
+"1" "control" 310.4
+"2" "control" 761.1
+"3" "control" 156.6
+"4" "control" 887.5
+"5" "control" 334.9
+"6" "stress" 721.4
+"7" "stress" 884.7
+"8" "stress" 646.4
+"9" "stress" 1049.4
+"10" "stress" 421.8
