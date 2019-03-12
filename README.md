@@ -1,4 +1,4 @@
-UniMelb Data Science
+UniMelb Data Science Subjects
 ============
 This is a GitHub repository containing:
 - Past Exams
