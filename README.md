@@ -10,7 +10,7 @@ The subjects are all "cores/recommended" for the major of Data Science. These in
 - Foundations of Algorithms (COMP10002)
 - Database Systems (INFO20008)
 - Elements of Data Processing (COMP20004)
-- Algorithm Data Structures (COMP20007)
+- Algorithm Data Structures (COMP20003)
 - Calculus 2 (MAST10006)
 - Linear Algebra (MAST10007)
 - Probability (MAST20004)
