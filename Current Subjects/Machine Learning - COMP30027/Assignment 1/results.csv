@@ -1,6 +1,0 @@
-,Training on Test with Imputation,10-Fold Cross-Validation with Imputation,Training on Test without Imputation,10-Fold Cross-Validation without Imputation
-breast-cancer.csv,75.52447552,69.5320197,75.52447552,70.92364532
-hepatitis.csv,84.51612903,81.375,84.51612903,83.95833333
-hypothyroid.csv,95.22605122,95.22641057,95.22605122,95.22601126
-mushroom.csv,99.71688823,99.69228485,99.71688823,99.6923
-primary-tumor.csv,61.6519174,47.49554367,61.6519174,45.72192513
