@@ -1,9 +1,11 @@
 UniMelb Data Science Subjects
 ============
 This is a GitHub repository containing:
-- Past Exams
-- Lecture Notes (study design up to date for 2019)
-- Assignments (for CIS subjects only)
+- Past Exams / MSTs
+- Lecture Notes
+- Assignments (for some CIS subjects only)
+- **This is to be used as a reference only. Please DO NOT plagiarise.**
+- **This is to be used as a reference only. Please DO NOT plagiarise.**
 - **This is to be used as a reference only. Please DO NOT plagiarise.**
 
 About Me:
@@ -17,22 +19,17 @@ The Computing Subjects Include:
 - Database Systems (INFO20008) - (78)
 - Elements of Data Processing (COMP20004) - (84)
 - Algorithm Data Structures (COMP20003) - (85)
+- Artificial Intellgience (COMP30024) - (XX)
+- Machine Learning (COMP30027) - (XX)
 
 The Math Subjects Include:
 - Calculus 2 (MAST10006)
 - Linear Algebra (MAST10007)
 - Probability (MAST20004)
 - Statistics (MAST20005)
-
-Current Subjects Undertaken:
-- Artificial Intellgience (COMP30024)
-- Machine Learning (COMP30027)
 - Linear Statistical Models (MAST30025)
 
-To Update:
-- Foundations of Computing to 2019 Semester 1
-
-Other:
+Breadths:
 - Music Health essay
 - High Music of the Baroque Era essay
 - Science Internship Case Study essay
