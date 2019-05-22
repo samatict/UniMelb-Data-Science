@@ -1,6 +1,6 @@
 UniMelb Data Science Subjects
 ============
-# This is to be used as a reference to see what the Data Science Major looks like. Please DO NOT plagiarise!!!
+### This is to be used as a reference to see what the Data Science Major at UniMelb is like. Please DO NOT use this to plagiarise!!!
 This is a GitHub repository containing:
 - Past Exams / MSTs
 - Lecture Notes
@@ -31,7 +31,7 @@ The Math Subjects Include:
 Breadths:
 - Music Health essay
 
-## Subject Reviews:
+### Subject Reviews:
 **Foundations of Computing**:  
 - Subject is run well both semesters, and is a great introduction to Python and Computer Science
 - Not crammable. If you want to do well you have to consistently grind and practice it (like maths)
@@ -74,6 +74,6 @@ Breadths:
 
 **Maths Subjects**:
 - They're all well run
-- Probability is a big jump (if you didn't do Real Analysis or AM1/AM2)
+- Probability is a big jump (if you didn't do Real Analysis or AM1/AM2) so prepare to grind
 - Have yet to find anything bad about the lecturers / lectures and content
 - Yao-Ban is the best lecturer (you'll have him for LSM)
