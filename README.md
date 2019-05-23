@@ -12,7 +12,6 @@ The core subjects will be _italicised_.
 - I'm currently a 3rd year undergrad majoring in Data Science.
 - Lab demonstrator for Foundations of Computing (COMP10001).
 - Spatial Data Analyst at UniMelb Infrastructure Services.
-- _Honour the work, and the work will honour you_ (if ya know this quote feel free to message me).
 
 ### Computing & Information Systems (CIS) Subjects:
 - _Foundations of Computing_ (COMP10001) - (75)
@@ -43,7 +42,7 @@ There's a lot more maths than you think (the major shares the same core maths as
 - Positive Leadership and Careers (EDUC30072)
 
 ### Other Subjects
-- Phsyics 1
+- Physics 1
 - Foundations of Chemistry
 
 ## Subject Reviews
