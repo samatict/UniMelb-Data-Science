@@ -91,11 +91,11 @@ There's a lot more maths than you think (the major shares the same core maths as
 **Machine Learning:**
 - Subject has no maths pre-req, but they attempt to cover "Linear Statistical Models" in 1 lecture. (_I'm not joking it was aids_)
 - Discussion forumn is dead (same as EoDP).
-- Head tutor was one of the most incompetant ever. If you're used to the algo subjects, this one is full of suffering. The head tutor broke online submissions for a whole 2 days for Assignment 2.
-- The usual lectruer is great, given that the maths is not a pre-req (at least tries to make it interesting). However, he was sick for a vast majority of the time I took the subject so my experience may be a bit biased...
-- They essentially try cover everything too fast and without depth, so it's just shallow teaching.
-- First assignment is a joke if you have done maths, but the second is a lot more interesting.
-- Quoting my tutor that saved me from necking from the incompetency: _"this subject is a money grabber because noone would take this subject if Probability was an actual pre-req".
+- The usual lectruer is great, given that the maths is not a pre-req (at least tries to make it interesting). However, he was sick for a vast majority of the time I took the subject so my experience may be a bit more biased to the worse side.
+- A lot of content was attempted to be covered and felt a bit too ambitious given that the maths was not pre-req.
+- First assignment is a joke if you have done maths, but the second is a **lot more** interesting.
+- Quoting my tutor: _"this subject is a money grabber because noone would take this subject if Probability was an actual pre-req".
+- Tim Baldwin saved us for the exam lecture <3
 
 **Maths Subjects**:
 - They're all well run
