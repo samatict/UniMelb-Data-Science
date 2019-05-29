@@ -19,9 +19,9 @@ The core subjects will be _italicised_.
 - _Database Systems_ (INFO20008) - (78)
 - _Elements of Data Processing_ (COMP20004) - (84)
 - Algorithm Data Structures (COMP20003) - (85)
-- Artificial Intellgience (COMP30024) - (XX)
+- Artificial Intelligence (COMP30024) - (XX)
 - _Machine Learning_ (COMP30027) - (XX)
-- Declaritive Programming (COMP30020) - (XX)
+- Declarative Programming (COMP30020) - (XX)
 
 ### Math Subjects
 There's a lot more maths than you think (the major shares the same core maths as Actuarial Science up to second year), and so I highly recommend you take either AM1 / AM2 or Real Analysis, or Probability will be a hard leap.
@@ -47,8 +47,8 @@ There's a lot more maths than you think (the major shares the same core maths as
 
 ## Subject Reviews
 **Foundations of Computing**:  
-- Subject is run well both semesters, and is a great introduction to Python and Computer Science.
-- Not crammable. If you want to do well you have to consistently grind and practice it (like maths).
+- Subject is run well both semesters and is a great introduction to Python and Computer Science.
+- Not crammable. If you want to do well, you have to consistently grind and practice it (like maths).
 - I recommend you waive this (and possibly FoA) if you did VCE algorithms, but otherwise do it.
 
 **Foundations of Algorithms**:  
@@ -61,7 +61,7 @@ There's a lot more maths than you think (the major shares the same core maths as
 **Elements of Data Processing**:  
 - This was **THE** biggest joke of a subject (in a bad way).
 - Lecturer presumably got a very low SES feedback because she was fired since it was so badly run.
-- Absolutely no reply from the lecturers / tutors on the discussion forumn for weeks.
+- Absolutely no reply from the lecturers / tutors on the discussion forum for weeks.
 - Assignments / Labs / Tutorials had little correlation with the lecture content.
 - If you know how to use `pandas` and jupyter notebook, **try your hardest** to get this subject waived.
 - **EDIT**: apparently the old lecturer is back which should hopefully revive this subject.
@@ -78,23 +78,23 @@ There's a lot more maths than you think (the major shares the same core maths as
 - Goes through all the great algorithms, _including_ path-finding algorithms (unlike DoA which covers hashing instead)
 - Assignments are great fun, and after FoA you should (hopefully) be experienced enough in C to appreciate it.
 - The 2018 Exam question about electrical outages landed me a Graduate offer at EssentialEnergy (ayyyy)
-- If you took Engineering Computation instead of FoA, you're gonna suffer a lot...
+- If you took Engineering Computation instead of FoA, you're going to suffer a lot...
 
-**Artificial Intellgience**:
+**Artificial Intelligence**:
 - First third of the lectures are review of basic search algorithms (ADS students will find it a breeze).
 - Assignments ARE AMAZINGLY FUN.
 - Tutors and lectures are ACTUALLY GOOD.
 - Hard and conceptual tutorial questions (although there is no full solution) but are quite useful in expanding your problem solving.
 - Notation for Probability (YES PROB IS IN THE SUBJECT) uses logical AND/OR/NOT, so you have been warned.
-- Do yourself a favour, and take the subject!!!!
+- Do yourself a favour and take the subject!!!!
 
-**Machine Learning:**
+**Machine Learning: **
 - Subject has no maths pre-req, but they attempt to cover "Linear Statistical Models" in 1 lecture. (_I'm not joking it was aids_)
-- Discussion forumn is dead (same as EoDP).
-- The usual lectruer is great, given that the maths is not a pre-req (at least tries to make it interesting). However, he was sick for a vast majority of the time I took the subject so my experience may be a bit more biased to the worse side.
+- Discussion forum is dead (same as EoDP).
+- The usual lecturer is great, given that the maths is not a pre-req (at least tries to make it interesting). However, he was sick for a vast majority of the time I took the subject so my experience may be a bit more biased to the worse side.
 - A lot of content was attempted to be covered and felt a bit too ambitious given that the maths was not pre-req.
 - First assignment is a joke if you have done maths, but the second is a **lot more** interesting.
-- Quoting my tutor: _"this subject is a money grabber because noone would take this subject if Probability was an actual pre-req".
+- Quoting my tutor: _"this subject is a money grabber because no one would take this subject if Probability was an actual pre-req".
 - Tim Baldwin saved us for the exam lecture <3
 
 **Maths Subjects**:
