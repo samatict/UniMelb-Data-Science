@@ -6,12 +6,13 @@ If you're looking for subject content, some of the following are provided:
 - Past Exams / MSTs
 - Textbooks (for some math subjects only)
 - Assignments (for some CIS subjects only)
-The core subjects will be _italicised_.
+
+The core subjects will be _italicised_ and the handbook can be [viewed here](https://handbook.unimelb.edu.au/2019/components/b-sci-major-8)
 
 ## About Me
 - I'm currently a 3rd year undergrad majoring in Data Science.
 - Lab demonstrator for Foundations of Computing (COMP10001).
-- Spatial Data Analyst at UniMelb Infrastructure Services.
+- Spatial Data Analyst Intern at UniMelb Infrastructure Services.
 
 ### Computing & Information Systems (CIS) Subjects:
 - _Foundations of Computing_ (COMP10001) - (75)
@@ -33,17 +34,16 @@ There's a lot more maths than you think (the major shares the same core maths as
 - _Modern Applied Statistics_ (MAST30027)
 - _Applied Data Science_ (MAST30034)
 
-### Breadth Subjects
+### Breadth / Other Subjects
 - Japanese 3 (JAPN10007)
+- Physics 1 (PHYC10003)
+- Fundamentals of Chemistry (CHEM10007)
+- Engineering Systems Design 2 (ENGR10003)
 - Music in the Culture of the Renaissance (MUSI30011)
 - High Baroque Music of the German World (MUSI30014)
 - Music Health (MUSI20150)
 - Science and Internship Program (SCIE30002)
 - Positive Leadership and Careers (EDUC30072)
-
-### Other Subjects
-- Physics 1
-- Foundations of Chemistry
 
 ## Subject Reviews
 **Foundations of Computing**:  
