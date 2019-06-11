@@ -20,7 +20,7 @@ Algorithm Data Structures (COMP20003) SEMESTER 2:
 
 Artificial Intellgience (COMP30024) SEMESTER 1:
 - Part A (8/8)
-- Part B (TBA)
+- Part B (20/22): Awarded full marks for creativity which was only given out to a few students out of the 150 teams.
 
 Machine Learning (COMP30027) SEMESTER 1:
 - Assignment 1 (20/20)
