@@ -1,0 +1,192 @@
+---
+title: "R"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Question 2 (setup)
+```{r q2}
+library(Matrix)
+y = c(43,45,47,46,48,33,37,38,35,56,54,57)
+X = matrix(c(rep(1,12),rep(1,5),rep(0,7),rep(0,5),rep(1,4),rep(0,3),rep(0,9),rep(1,3)),12,4)
+n = dim(X)[1]
+r = rankMatrix(X)[1]
+```
+
+# Question 2. a)
+```{r q2a}
+xtx = t(X)%*%X
+xtxc = diag(c(0,1/5,1/4,1/3))
+
+xtxc
+```
+
+# Question 2. b) (helper)
+```{r q2b}
+b = xtxc%*%t(X)%*%y
+
+b
+```
+
+
+# Question 2. c)
+```{r q2c}
+tt = c(4,2,1,1)
+
+tt == round(tt%*%xtxc%*%xtx,3)
+```
+
+# Question 2. d)
+```{r q2d}
+tt1 = c(1,1,0,0)
+e = y - X%*%b
+s2 = sum(e^2)/(n-r)
+ta = qt(0.975, df=(n-r))
+CI = c(tt1%*%b) + c(-1,1)*c(ta*sqrt(s2)*sqrt(1+t(tt1)%*%xtxc%*%tt1))
+
+CI
+```
+
+# Question 2. e)
+```{r q2e}
+C = matrix(c(0,0,1,-1),1,4)
+m = rankMatrix(C)[1]
+SS = t(C%*%b)%*%solve(C%*%xtxc%*%t(C))%*%C%*%b
+Fstat = (SS/m)/s2
+
+pf(Fstat, m, n-r, lower=F) < 0.05
+```
+
+# Question 4 (setup)
+```{r q4}
+setwd("C:\\Users\\akira\\Dropbox\\University\\Linear Statistical Models\\Lab Data")
+df = read.csv("mile.csv")
+```
+
+# Question 4. a)
+```{r q4a}
+palette(c("blue","red"))
+plot(df$Time~df$Year, pch=array(df$Gender), col=df$Gender)
+```
+
+# Question 4. b)
+```{r q4b}
+amodel = lm(Time ~ Gender+Year, df)
+imodel = lm(Time ~ Gender*Year+Gender+Year, df)
+
+anova(amodel, imodel)
+```
+
+# Question 4. c)
+```{r q4c}
+summary(imodel)
+male = c(imodel$coefficients[1] + imodel$coefficients[2], imodel$coefficients[3] + imodel$coefficients[4])
+female = c(imodel$coefficients[1], imodel$coefficients[3])
+
+plot(df$Time~df$Year, pch=array(df$Gender), col=df$Gender)
+abline(male)
+abline(female)
+```
+
+# Question 4. d)
+```{r q4d}
+point_estimate = -imodel$coefficients[2]/imodel$coefficients[4]
+
+point_estimate
+```
+
+# Question 4. e)
+```{r q4e}
+tt = c(0,1,-1, 0, 2031, -2031)
+n = nrow(df)
+p = length(df)
+X = matrix(0, n, p)
+y = df$Time
+
+X[,1] = 1
+mapper = unlist(Map({function(i) if (i=="Male") 1 else 2}, df$Gender))
+X[cbind(1:n, mapper+1)] = 1
+X[,4] = df$Year
+X[cbind(1:n, mapper+4)] = df$Year
+
+xtx = t(X)%*%X
+xtxc = matrix(0, dim(X)[2], dim(X)[2])
+xtxc[c(2:3,5:6),c(2:3,5:6)] = t(solve(xtx[c(2:3,5:6),c(2:3,5:6)]))
+A = t(xtxc)%*%xtx
+
+tt == round(tt%*%A)
+```
+
+# Question 4. f)
+```{r q4f}
+ci = gmodels::estimable(imodel, c(0,0,0,1), conf.int=0.95)
+c(ci$Lower, ci$Upper)
+```
+
+# Question 4. g)
+```{r q4g}
+car::linearHypothesis(imodel, c(0,0,1,1), -0.3)
+```
+
+# Question 5. a)
+```{r q5}
+n3 = 100/(5/sqrt(10) + 1 + 1)
+n2 = round(n3*1/2)
+n1 = round(n3*1/sqrt(10))
+n3 = round(n3) - 1 # for rounding
+```
+
+# Question 5. b)
+```{r q5b}
+n = c(n1,n2,n3)
+nsum = sum(n)
+x = sample(nsum, nsum)
+j1 = x[1:n[1]]
+j2 = x[(n[1]+1):(n[1]+n[2])]
+j3 = x[(n[1]+n[2]+1):nsum]
+
+print("Treatment 1 Patients - $5000")
+(j1)
+
+print("Treatment 2 Patients - $2000")
+(j2)
+
+print("Treatment 3 Patients - $1000")
+(j3)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+---
+title: "R output for A2"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Question 2. a)
+```{r q2}
+y = c(5.5,5.9,6.5,5.9,8,9,10,10.8)
+X = matrix(c(rep(1,8),7.2,10,9,5.5,9,9.8,14.5,8,8.7,9.4,
+             10,9,12,11,12,13.7,5.5,4.4,4,7,5,6.2,5.8,3.9),8,4)
+b = solve(t(X)%*%X,t(X)%*%y)
+e = y - X%*%b
+n = dim(X)[1]
+p = dim(X)[2]
+s2 = sum(e^2)/(n-p)
+
+b
+s2
+```
+
+Question 2. b)
+```{r q2b}
+c = solve(t(X)%*%X)
+c
+```
+
+Question 2. c)
+```{r q2c}
+s = sqrt(sum(e^2)/(n-p))
+alpha = 0.01
+ta = qt(1-alpha/2, df=(n-p))
+t = c(1,8,9,5)
+ttb = t(t)%*%b
+CI = c(ttb) + c(-1,1)*c(ta*s*sqrt(t(t)%*%solve(t(X)%*%X)%*%t))
+
+CI
+```
+
+Question 2. d)
+```{r q2d}
+for (alpha in seq(0.01, 0.15, by = 0.0005)) {
+  # t_alpha given an alpha value
+  ta = qt(1-alpha/2, df=(n-p)) 
+  # Generate Prediction Interval given alpha
+  PI = c(ttb) + c(-1,1)*c(ta*s*sqrt(1+t(t)%*%solve(t(X)%*%X)%*%t))  
+  if (round(PI[1],3) == 4.012 && round(PI[2],3) == 7.087) {
+    print(alpha)
+    print(round(PI,3))
+  }
+}
+```
+
+Question 2. e)
+```{r q2e}
+SSRes = t(y-X%*%b)%*%(y-X%*%b)
+CorrectedSSReg = t(y)%*%X%*%b - sum(y)^2/n
+k = 3 # num parameters
+Fstat = (CorrectedSSReg/k)/(SSRes/(n-k-1))
+Fval = qf(0.95,k,n-k-1)
+
+Fstat
+Fval
+Fstat > Fval
+```
+
+Question 4. a)
+```{r q4a}
+data(state)
+statedata <- data.frame(state.x77, row.names=state.abb, check.names=TRUE)
+
+pairs(statedata)
+
+statedata$Area = log(statedata$Area) # log Area
+statedata$Illiteracy = log(statedata$Illiteracy) # log Illiteracy
+```
+
+Question 4. b)
+```{r q4b}
+basemodel = lm(Murder ~ 1, data=statedata)
+
+add1(basemodel, scope= ~ . + Population + Income + Illiteracy + Life.Exp + HS.Grad + Frost + Area, data=statedata, test="F")
+# we add Life.Exp
+model1 = lm(Murder ~ Life.Exp, data=statedata)
+add1(model1, scope= ~ . + Population + Income + Illiteracy + HS.Grad + Frost + Area, data=statedata, test="F")
+# we add Frost
+model2 = lm(Murder ~ Life.Exp + Frost, data=statedata)
+add1(model2, scope= ~ . + Population + Income + Illiteracy + HS.Grad +  Area, data=statedata, test="F")
+# we add Area
+model3 = lm(Murder ~ Life.Exp + Frost + Area, data=statedata)
+add1(model3, scope= ~ . + Population + Income + Illiteracy + HS.Grad, data=statedata, test="F")
+# we add Population
+model4 = lm(Murder ~ Life.Exp + Frost + Area + Population, data=statedata)
+add1(model4, scope= ~ . + Income + Illiteracy + HS.Grad, data=statedata, test="F")
+# we add Illiteracy
+model5 = lm(Murder ~ Life.Exp + Frost + Area + Population + Illiteracy, data=statedata)
+add1(model5, scope= ~ . + Income + HS.Grad, data=statedata, test="F")
+# Our final model keeps Life.Exp, Frost, Area, Population, Illiteracy
+
+model5
+```
+
+Question 4. c)
+```{r q4c}
+fullmodel = lm(Murder ~ Population + Income + Illiteracy + Life.Exp + HS.Grad + Frost + Area, data=statedata)
+model = step(fullmodel, scope= ~ . + Population + Income + Illiteracy + Life.Exp + HS.Grad + Frost + Area, data=statedata)
+# Our final model keeps Life.Exp, Area, Illiteracy, Population, Frost at a significance level of alpha=0.05
+
+model
+```
+
+Question 4. e)
+```{r q4e}
+plot(model)
+```
+Compare this to another final model that also used a log transformation on Population.
+```{r other}
+statedata$Population = log(statedata$Population)
+
+fullmodel = lm(Murder ~ Population + Income + Illiteracy + Life.Exp + HS.Grad + Frost + Area, data=statedata)
+model = step(fullmodel, scope= ~ . + Population + Income + Illiteracy + Life.Exp + HS.Grad + Frost + Area, data=statedata)
+
+plot(model)
+```
+Not taking a transformation is arguably better even though it looks like it should have.
+Residuals vs Fitted are not as spread, QQ-Plot suggests that the tails follow another distribution, Scale-Location seems to have a negative quadratic trend and the Residuals vs Leverage has points with much larger leverage compared to the previous final model.
+
+Question 5. b)
+```{r q5b}
+Xscaled = scale(X[,-1]) # No intercept parameter (Piazza)
+yscaled = scale(y, scale=FALSE) # Only centering, no scale (Piazza)
+r = dim(t(Xscaled)%*%Xscaled)
+lambda = diag(0.5, r)
+b = solve(t(Xscaled)%*%Xscaled + lambda, t(Xscaled)%*%yscaled)
+
+b
+```
+
+Question 5. c)
+```{r q5c}
+library(matrixcalc)
+aic = c()
+lambdas = seq(0, 0.5, by=0.01)
+
+for (i in lambdas){
+  lambda = diag(i, r)
+  
+  ridgeb = solve(t(Xscaled)%*%Xscaled + lambda, t(Xscaled)%*%yscaled)
+  SSRes = t(yscaled-Xscaled%*%ridgeb)%*%(yscaled-Xscaled%*%ridgeb)
+  
+  H = Xscaled%*%solve(t(Xscaled)%*%Xscaled + lambda)%*%t(Xscaled)
+  
+  aic = c(aic, n*log(SSRes/n) + 2*matrix.trace(H))
+}
+
+plot(lambdas, aic, col='orange', type='l')
+lambda_aic = lambdas[which.min(aic)]
+
+lambda_aic
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
