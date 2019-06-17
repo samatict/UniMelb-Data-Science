@@ -11,7 +11,7 @@ The core subjects will be _italicised_ and the handbook can be [viewed here](htt
 
 ## About Me
 - I'm currently a 3rd year undergrad majoring in Data Science.
-- Lab demonstrator for Foundations of Computing (COMP10001).
+- Lab demonstrator for Foundations of Computing (COMP10001) and Algorithm & Data Structures (COMP20003).
 - Spatial Data Analyst Intern at UniMelb Infrastructure Services.
 
 ### Computing & Information Systems (CIS) Subjects:
@@ -75,8 +75,9 @@ There's a lot more maths than you think (the major shares the same core maths as
 
 **Algorithm Data Structures**:
 - By far the best 2nd year COMP subject ever (better alternative to Design of Algorithms)
-- Goes through all the great algorithms, _including_ path-finding algorithms (unlike DoA which covers hashing instead)
+- Goes through all the great algorithms, _including_ path-finding algorithms (unlike DoA which covers hashing and compression instead)
 - Assignments are great fun, and after FoA you should (hopefully) be experienced enough in C to appreciate it.
+- If you're rusty on C don't worry, first few lectures is revision (we recover `malloc` as well for eng comp kids8)
 - The 2018 Exam question about electrical outages landed me a Graduate offer at EssentialEnergy (ayyyy)
 - If you took Engineering Computation instead of FoA, you're going to suffer a lot...
 
