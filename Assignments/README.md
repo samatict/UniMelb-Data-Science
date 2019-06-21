@@ -1,6 +1,11 @@
-Assignments Overview
+Assignments Overview (Results)
 =======
-Foundations of Algorithms (COMP10002) SEMESTER 2:
+Foundations of Computing (COMP10001) SEMESTER 2:
+- Assignment 1 (8.5/10)
+- Assignment 2 (8/10)
+- Assignment 3 (10/10)
+
+Foundations of Algorithms (COMP10002) SEMESTER 1:
 - Assignment 1 (15/15)
 - Assignment 2 (15/15)
 
@@ -24,4 +29,4 @@ Artificial Intellgience (COMP30024) SEMESTER 1:
 
 Machine Learning (COMP30027) SEMESTER 1:
 - Assignment 1 (20/20)
-- Assignment 2 (TBA)
+- Assignment 2 (19/20)
