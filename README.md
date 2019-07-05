@@ -14,7 +14,7 @@ If you're from COMP20003 (or possibly COMP10002), refer to [this guide](https://
 ## About Me
 - I'm currently a 3rd year undergrad majoring in Data Science.
 - Lab demonstrator for Foundations of Computing (COMP10001) and Algorithm & Data Structures (COMP20003).
-- Spatial Data Analyst Intern at UniMelb Infrastructure Services.
+- Former Spatial Data Analyst Intern at UniMelb Infrastructure Services.
 - To-be graduate Business Analyst at DXC Technology for 2020.
 
 ### Core Computing & Information Systems (CIS) Subjects:
