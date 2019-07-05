@@ -11,7 +11,9 @@ The handbook for the Data Science major can be [viewed here](https://handbook.un
 
 If you're from COMP20003 (or possibly COMP10002), refer to [this guide](https://github.com/akiratwang/COMP20003-Setting-Up) for setting up your Windows device for C.
 
-For a (very very) neat timetable planner for university, visit Rohyl's [lookahead](https://lookahead.rohyl.io/). It even has a neat interface :)
+For a (very very) neat timetable planner for university, visit Rohyl's [lookahead](https://lookahead.rohyl.io/). It even has a neat interface :) 
+
+If ya liked this guide / repository, leave a cheeky Star ;)
 
 ## About Me
 - I'm currently a 3rd year undergrad majoring in Data Science.
