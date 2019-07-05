@@ -17,6 +17,7 @@ If you're from COMP20003 (or possibly COMP10002), refer to [this guide](https://
 - Former Spatial Data Analyst Intern at UniMelb Infrastructure Services.
 - To-be graduate Business Analyst at DXC Technology for 2020.
 
+## Data Science Major Subjects
 ### Core Computing & Information Systems (CIS) Subjects:
 - Foundations of Computing (COMP10001)
 - Foundations of Algorithms (COMP10002)
